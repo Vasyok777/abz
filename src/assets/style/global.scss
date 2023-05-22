@@ -1,0 +1,33 @@
+body {
+	font-family: $fontFamily;
+	font-size: $mainSize;
+	font-weight: $mainWeight;
+	line-height: $bodyLine;
+	color: $mainColor;
+	background-color: $bg;
+}
+.container {
+	max-width: $container;
+	padding: 0px $paddingContainer;
+	margin: 0 auto;
+	@media (max-width: 1024px) {
+		max-width: $containerMob;
+	}
+	@media (max-width: 768px) {
+		max-width: 734px;
+	}
+	@media (max-width: 360px) {
+		max-width: 338px;
+		padding: 0 5px;
+	}
+}
+.container__full {
+	@media (max-width: 1024px) {
+		max-width: 100%;
+		padding: 0;
+	}
+}
+.title {
+	font-size: $titleFz;
+	line-height: 1;
+}

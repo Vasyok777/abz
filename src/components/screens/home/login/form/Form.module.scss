@@ -1,0 +1,122 @@
+.form {
+	max-width: 380px;
+	margin-bottom: 100px;
+	width: 100%;
+	&__events {
+		pointer-events: none;
+	}
+	&__input {
+		margin-bottom: 52px;
+	}
+	&__input::nth-last-child(1) {
+		margin-bottom: 49px;
+	}
+	& fieldset {
+		margin-bottom: 37px;
+		margin-top: -8px;
+	}
+	& legend {
+		margin-bottom: 11px;
+	}
+	&__radio {
+		width: 0;
+		height: 0;
+		position: absolute;
+		z-index: -1;
+		font-size: 0;
+		opacity: 0;
+		&:checked + .form__radio-custom:before {
+			transform: translate(-50%, -50%) scale(1);
+		}
+		&:checked + .form__radio-custom {
+			border: 1px solid #00bdd3;
+		}
+		&-custom {
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			border: 1px solid #d0cfcf;
+			margin-right: 12px;
+			border-radius: 50%;
+			position: relative;
+			transition: 0.3s ease;
+			&:before {
+				content: '';
+				position: absolute;
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				background: #00bdd3;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%) scale(0);
+				transition: 0.3s ease;
+			}
+		}
+	}
+	&__file {
+		&-label {
+			height: 53px;
+			display: flex;
+			align-items: initial;
+			border-radius: 4px;
+			color: rgba(126, 126, 126, 1);
+		}
+		&-input {
+			width: 0;
+			height: 0;
+			z-index: -1;
+			position: absolute;
+		}
+		&-custom {
+			display: inline-block;
+			padding: 14px 15px;
+			border-radius: 4px 0 0 4px;
+			color: rgba(0, 0, 0, 0.87);
+			padding-right: 15px;
+			position: relative;
+			border: 1px solid rgba(0, 0, 0, 0.87);
+		}
+		&-text {
+			display: block;
+			width: 100%;
+			border: 1px solid #d0cfcf;
+			padding: 15px 14px;
+			border-radius: 0 4px 4px 0;
+		}
+	}
+	&__button {
+		margin: auto;
+		margin-top: 48px;
+		&-valid {
+			width: 100px;
+			padding: 4px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #f4e041;
+			line-height: 1.625;
+			border: none;
+			border-radius: 80px;
+			transition: all 0.3s ease-in;
+		}
+		&-invalid {
+			background: #d0cfcf;
+		}
+		&-errors {
+			background: #d0cfcf;
+		}
+	}
+}
+.label {
+	display: flex;
+	align-items: center;
+	margin-bottom: 7px;
+}
+.error {
+	color: red;
+	font-size: 12px;
+}
+.errors {
+	border: 1px solid red;
+}

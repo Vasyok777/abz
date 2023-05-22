@@ -1,0 +1,59 @@
+label {
+	position: relative;
+}
+.input {
+	width: 100%;
+	padding: 16px 16px;
+	outline: none;
+	border: none;
+	border: 1px solid #d0cfcf;
+	color: rgba(0, 0, 0, 0.87);
+	border-radius: 4px;
+	background: transparent;
+	&.errors {
+		border: 1px solid red;
+	}
+	&__text {
+		position: absolute;
+		top: 0;
+		left: 16px;
+		line-height: 21px;
+		transition: 0.3s ease;
+		&.errors {
+			color: red;
+			border: none;
+		}
+	}
+	&:valid ~ .input__text {
+		top: -93%;
+		font-size: 12px;
+		line-height: 14px;
+		background: #f8f8f8;
+		padding: 0 5px;
+	}
+	&:focus ~ .input__text {
+		top: -93%;
+		font-size: 12px;
+		line-height: 14px;
+		background: #f8f8f8;
+		padding: 0 5px;
+	}
+}
+.helper {
+	&__text {
+		position: absolute;
+		bottom: -132%;
+		left: 4%;
+		font-size: 12px;
+		line-height: 14px;
+		color: #7e7e7e;
+	}
+	&__errors {
+		position: absolute;
+		bottom: -150%;
+		left: 3%;
+		font-size: 12px;
+		line-height: 14px;
+		color: red;
+	}
+}

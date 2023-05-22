@@ -1,0 +1,36 @@
+.user {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+	text-align: center;
+	row-gap: 20px;
+	background-color: #fff;
+	overflow: hidden;
+	&__name {
+		width: 100%;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		-webkit-line-clamp: 1;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+	&__info {
+		width: 100%;
+	}
+	&__img {
+		width: 70px;
+		height: 70px;
+		object-fit: cover;
+		border-radius: 50%;
+	}
+	&__email {
+		width: 100%;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		-webkit-line-clamp: 1;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+}

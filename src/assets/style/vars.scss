@@ -1,0 +1,15 @@
+$containerWidth: 1170px;
+$containerWidthMob: 904px;
+$paddingContainer: 15px;
+$container: $containerWidth + ($paddingContainer * 2);
+$containerMob: $containerWidthMob + ($paddingContainer * 2);
+$fontFamily: 'Nunito', sans-serif;
+$mainSize: 16px;
+$mainWeight: 400;
+$bodyLine: 1.625;
+$titleFz: 40px;
+$mainColor: rgba(0, 0, 0, 0.87);
+$primaryColor: #f4e041;
+$secondaryColor: #00bdd3;
+$hoverColor: #ffe302;
+$bg: #f8f8f8;

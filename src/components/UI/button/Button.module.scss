@@ -1,0 +1,33 @@
+@import '../../../assets/style/vars.scss';
+.button {
+	width: 100px;
+	padding: 4px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: $primaryColor;
+	line-height: $bodyLine;
+	border: none;
+	border-radius: 80px;
+	transition: all 0.3s ease-in;
+	@media (max-width: 768px) {
+		line-height: 27px;
+	}
+	&:hover {
+		background-color: $hoverColor;
+	}
+}
+.disabled__button {
+	width: 100px;
+	padding: 4px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	line-height: $bodyLine;
+	border-radius: 80px;
+	transition: all 0.3s ease-in;
+	pointer-events: none;
+	background: #b4b4b4;
+	color: rgba(255, 255, 255, 0.87);
+}

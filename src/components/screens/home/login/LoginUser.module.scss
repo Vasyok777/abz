@@ -1,0 +1,17 @@
+.login {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 50px;
+	}
+}
+.loader {
+	position: absolute;
+	top: 40%;
+	z-index: 12;
+}
